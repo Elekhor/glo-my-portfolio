@@ -278,6 +278,13 @@ margin-bottom: 4px;
     display: flex;
     justify-content: flex-end;
 }
+.footer-text {
+    color: #83807c;
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+}
 @media (max-width: 1024px) {
     .container {
     max-width: 760px;
