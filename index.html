@@ -18,15 +18,15 @@
         <img src="images/logo.svg" alt="logo">
         <nav class="navigation">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+                <li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+                <li class="nav-item"><a href="#protfolio" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
             </ul>
         </nav>
     </div>
     <!-- ./navbar -->
-    <header class="header container">
+    <header class="header container" id="main">
         <img src="images/avatar.webp" width="212px" alt="Егор Пакулин" class="header-photo">
         <!-- /.header-photo -->
         <div class="header-text">
@@ -48,7 +48,7 @@
                     <li class="social-item"><a href="" class="social-link"><img src="images/icons/youtube.svg"
                                 alt="youtube" class="social-logo"></a></li>
                 </ul>
-                <a href="#" class="cv-download" download>
+                <a href="cv.pdf" class="cv-download" download>
                     <img src="images/icons/clip.svg" alt="download-icon" class="cv-icon/">
                     <span class="cv-text">Скачать резюме</span>
                 </a>
@@ -57,7 +57,7 @@
         <!-- /.header-text -->
     </header>
     <!-- /.header -->
-    <section class="portfoli">
+    <section class="portfoli" id="protfolio">
         <div class="container">
             <h2 class="section-heading">Последние проекты</h2>
             <div class="cards">
@@ -106,7 +106,7 @@
         <!-- /.container -->
     </section>
     <!-- /.portfoli -->
-    <section class="developer container">
+    <section class="developer container" id="developer">
 
         <img src="images/developer-photo.jpg" alt="Пакулин Егор" class="developer-photo">
         <div class="developer-about">
@@ -122,7 +122,7 @@ Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</div>
         
     </section>
     <!-- /.developer container -->
-     <section class="skills container">
+     <section class="skills container" id="skills">
         <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
          <ul class="tags">
                         <li class="tag"><a href="#" class="tags-item"></a>HTML</li>
@@ -135,22 +135,24 @@ Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</div>
                         <li class="tag"><a href="#" class="tags-item"></a>SASS</li>
                     </ul>
      </section>
-     <section class="feedback form-container">
-        <h2 class="feedback-title">Готов обсудить проект...</h2>
+     <section class="feedback" id="feedback">
+        <img src="images/hand.png" alt="hand" class="feedback-hand" />
+        <div class="form-container">
+            <h2 class="feedback-title">Готов обсудить проект...</h2>
         <form action="#" class="form">
             <div class="input-group">
                 <label for="userName" class="input-label">Имя</label>
-                <input id="userName" type="text" class="input">
+                <input id="userName" name="client_name" type="text" class="input">
             </div>
             <!--./input-group-->
             <div class="input-group">
                 <label for="userEmail" class="input-label">Email</label>
-                <input id="userEmail" type="text" class="input">
+                <input id="userEmail" name="client_email" type="text" class="input">
             </div>
             <!--./input-group-->
             <div class="input-group">
                 <label for="userMessage" class="input-label">Сообщение</label>
-                <textarea id="UserMessage" cols="30" rows="30" class="input textarea"></textarea>
+                <textarea id="UserMessage" name="client_message" cols="30" rows="30" class="input textarea"></textarea>
             </div>
             <!--./input-group-->
             <div class="button-group">
@@ -160,7 +162,9 @@ Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</div>
                 </button>
             </div>
         </form>
+        </div>
      </section>
+     <script src="js/main.js"></script>
 </body>
 
 </html>
